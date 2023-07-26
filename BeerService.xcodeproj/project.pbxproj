@@ -13,6 +13,14 @@
 		EFBE3A572A6FDC4C005EA395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFBE3A552A6FDC4C005EA395 /* Main.storyboard */; };
 		EFBE3A592A6FDC4E005EA395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBE3A582A6FDC4E005EA395 /* Assets.xcassets */; };
 		EFBE3A5C2A6FDC4E005EA395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFBE3A5A2A6FDC4E005EA395 /* LaunchScreen.storyboard */; };
+		EFBE3A642A6FE3B2005EA395 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A632A6FE3B2005EA395 /* Beer.swift */; };
+		EFBE3A672A71551F005EA395 /* BoilVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A662A71551F005EA395 /* BoilVolume.swift */; };
+		EFBE3A692A71557E005EA395 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A682A71557E005EA395 /* Ingredients.swift */; };
+		EFBE3A6B2A7155C1005EA395 /* Hop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A6A2A7155C1005EA395 /* Hop.swift */; };
+		EFBE3A6D2A7155EB005EA395 /* Malt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A6C2A7155EB005EA395 /* Malt.swift */; };
+		EFBE3A6F2A715632005EA395 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A6E2A715632005EA395 /* Method.swift */; };
+		EFBE3A712A71565D005EA395 /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A702A71565D005EA395 /* Fermentation.swift */; };
+		EFBE3A732A71567A005EA395 /* MashTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A722A71567A005EA395 /* MashTemp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		EFBE3A582A6FDC4E005EA395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFBE3A5B2A6FDC4E005EA395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFBE3A5D2A6FDC4E005EA395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFBE3A632A6FE3B2005EA395 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		EFBE3A662A71551F005EA395 /* BoilVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilVolume.swift; sourceTree = "<group>"; };
+		EFBE3A682A71557E005EA395 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		EFBE3A6A2A7155C1005EA395 /* Hop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hop.swift; sourceTree = "<group>"; };
+		EFBE3A6C2A7155EB005EA395 /* Malt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Malt.swift; sourceTree = "<group>"; };
+		EFBE3A6E2A715632005EA395 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		EFBE3A702A71565D005EA395 /* Fermentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
+		EFBE3A722A71567A005EA395 /* MashTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MashTemp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +79,24 @@
 				EFBE3A582A6FDC4E005EA395 /* Assets.xcassets */,
 				EFBE3A5A2A6FDC4E005EA395 /* LaunchScreen.storyboard */,
 				EFBE3A5D2A6FDC4E005EA395 /* Info.plist */,
+				EFBE3A652A6FE406005EA395 /* APIModelsBeer */,
 			);
 			path = BeerService;
+			sourceTree = "<group>";
+		};
+		EFBE3A652A6FE406005EA395 /* APIModelsBeer */ = {
+			isa = PBXGroup;
+			children = (
+				EFBE3A632A6FE3B2005EA395 /* Beer.swift */,
+				EFBE3A662A71551F005EA395 /* BoilVolume.swift */,
+				EFBE3A682A71557E005EA395 /* Ingredients.swift */,
+				EFBE3A6A2A7155C1005EA395 /* Hop.swift */,
+				EFBE3A6C2A7155EB005EA395 /* Malt.swift */,
+				EFBE3A6E2A715632005EA395 /* Method.swift */,
+				EFBE3A702A71565D005EA395 /* Fermentation.swift */,
+				EFBE3A722A71567A005EA395 /* MashTemp.swift */,
+			);
+			path = APIModelsBeer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +171,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFBE3A542A6FDC4C005EA395 /* ViewController.swift in Sources */,
+				EFBE3A642A6FE3B2005EA395 /* Beer.swift in Sources */,
+				EFBE3A672A71551F005EA395 /* BoilVolume.swift in Sources */,
+				EFBE3A6D2A7155EB005EA395 /* Malt.swift in Sources */,
 				EFBE3A502A6FDC4C005EA395 /* AppDelegate.swift in Sources */,
+				EFBE3A6B2A7155C1005EA395 /* Hop.swift in Sources */,
+				EFBE3A692A71557E005EA395 /* Ingredients.swift in Sources */,
 				EFBE3A522A6FDC4C005EA395 /* SceneDelegate.swift in Sources */,
+				EFBE3A732A71567A005EA395 /* MashTemp.swift in Sources */,
+				EFBE3A6F2A715632005EA395 /* Method.swift in Sources */,
+				EFBE3A712A71565D005EA395 /* Fermentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
