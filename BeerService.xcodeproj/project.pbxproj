@@ -13,6 +13,9 @@
 		EFBE3A572A6FDC4C005EA395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFBE3A552A6FDC4C005EA395 /* Main.storyboard */; };
 		EFBE3A592A6FDC4E005EA395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBE3A582A6FDC4E005EA395 /* Assets.xcassets */; };
 		EFBE3A5C2A6FDC4E005EA395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFBE3A5A2A6FDC4E005EA395 /* LaunchScreen.storyboard */; };
+		EFBE3A762A791319005EA395 /* BeerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A752A791319005EA395 /* BeerRequest.swift */; };
+		EFBE3A782A79139F005EA395 /* protocolRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A772A79139F005EA395 /* protocolRequest.swift */; };
+		EFBE3A7E2A792D3D005EA395 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBE3A7D2A792D3D005EA395 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EFBE3A582A6FDC4E005EA395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFBE3A5B2A6FDC4E005EA395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFBE3A5D2A6FDC4E005EA395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFBE3A752A791319005EA395 /* BeerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRequest.swift; sourceTree = "<group>"; };
+		EFBE3A772A79139F005EA395 /* protocolRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolRequest.swift; sourceTree = "<group>"; };
+		EFBE3A7D2A792D3D005EA395 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +69,19 @@
 				EFBE3A582A6FDC4E005EA395 /* Assets.xcassets */,
 				EFBE3A5A2A6FDC4E005EA395 /* LaunchScreen.storyboard */,
 				EFBE3A5D2A6FDC4E005EA395 /* Info.plist */,
+				EFBE3A742A7912C5005EA395 /* NetworkClient */,
 			);
 			path = BeerService;
+			sourceTree = "<group>";
+		};
+		EFBE3A742A7912C5005EA395 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				EFBE3A772A79139F005EA395 /* protocolRequest.swift */,
+				EFBE3A752A791319005EA395 /* BeerRequest.swift */,
+				EFBE3A7D2A792D3D005EA395 /* NetworkService.swift */,
+			);
+			path = NetworkClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +157,10 @@
 			files = (
 				EFBE3A542A6FDC4C005EA395 /* ViewController.swift in Sources */,
 				EFBE3A502A6FDC4C005EA395 /* AppDelegate.swift in Sources */,
+				EFBE3A7E2A792D3D005EA395 /* NetworkService.swift in Sources */,
 				EFBE3A522A6FDC4C005EA395 /* SceneDelegate.swift in Sources */,
+				EFBE3A762A791319005EA395 /* BeerRequest.swift in Sources */,
+				EFBE3A782A79139F005EA395 /* protocolRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
